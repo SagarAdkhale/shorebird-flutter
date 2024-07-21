@@ -1,16 +1,23 @@
-# shorebird
+# Shorebird Test App
 
-A new Flutter project.
+Welcome to the **Shorebird Test App**! This application demonstrates the process of manually updating Shorebird patches and highlights the transitions between various update banners.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+The Shorebird Test App showcases a smooth and informative update process using Shorebird. The app features a step-by-step flow to guide users through the update process, including notifications, download progress, and restart prompts.
 
-A few resources to get you started if this is your first Flutter project:
+### Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Update Notifications**: Displays a banner at the top of the screen when an update is available, with options to download or cancel.
+- **Download Progress**: Shows a progress banner during the download of the update.
+- **Restart Prompt**: Prompts users to restart the app once the update is downloaded to apply the new patch.
+- **Smooth Transition**: Provides a clear and guided update experience from notification to completion.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/shorebird-test-app.git
+
+shorebird release android --artifact apk
