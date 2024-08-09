@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   late ShoreBirdUtility shoreBirdUtility;
   String description =
-      "Welcome to the Shorebird Test App! This application demonstrates the process of manually updating Shorebird patches and highlights the transitions between various update banners. When an update is available, a banner at the top of the screen notifies users with an option to download the update. Upon initiating the download, a new banner appears to indicate the progress. Once the download is complete, a final banner prompts the user to restart the app to apply the new update. This step-by-step flow ensures users are well-informed and guided throughout the update process, showcasing a smooth transition between different stages of updating the app.";
+      "The app dynamically updates its color based on the applied patch, giving a visual cue of the update. The displayed patch number helps users track the current version. This step-by-step flow ensures that users are well-informed and experience a smooth transition through each stage of the update process ";
   bool shoreBirdAvablity = false;
   int? shoreBirdPatchVersion;
 
@@ -52,7 +52,8 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Container(
                 width: double.infinity,
-                color: const Color.fromARGB(255, 125, 180, 221),
+                color: Color.fromRGBO(240, 143, 98,
+                    1), //const Color.fromARGB(255, 125, 180, 221),
                 padding: const EdgeInsets.all(20),
                 child: Center(
                   child: Text(
